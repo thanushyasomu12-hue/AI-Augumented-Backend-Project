@@ -1,0 +1,29 @@
+{
+  "name": "ai-studybuddy-enhanced",
+  "version": "2.0.0",
+  "description": "Enhanced AI StudyBuddy backend with secure auth, PDF extraction, AI study tools, search, progress tracking and admin analytics.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "check": "node --check index.js && node --check src/controllers/authController.js && node --check src/controllers/materialController.js",
+    "test": "node --test"
+  },
+  "keywords": ["nodejs", "express", "mongodb", "gemini", "education", "ai"],
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.2",
+    "multer": "^2.2.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
